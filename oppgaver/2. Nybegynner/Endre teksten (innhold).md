@@ -18,6 +18,7 @@ Nyttige begreper:
 | <p> | "paragraph" | et avsnitt med vanlig tekst - altså det som kommer etter en overskrift. |
 | <button> | en knapp som brukeren kan trykke på. Du skriver teksten som skal stå på knappen mellom HTML-tagene: `<button>[tekst]</button>` |
 
-Ressurser:
+### Ressurser - Her kan du finne eksempler
+
 Overskrifter i HTML: https://www.w3schools.com/html/html_headings.asp
 Avsnitt i HTML: https://www.w3schools.com/html/html_paragraphs.asp

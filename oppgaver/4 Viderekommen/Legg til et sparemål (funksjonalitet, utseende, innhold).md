@@ -28,7 +28,8 @@ Hint:
 
 Nyttige begreper:
 
-Ressurser:
+### Ressurser - Her kan du finne eksempler
+
 Slik skriver du en funksjon: https://www.youtube.com/watch?v=19C7Xmsn18I
 
 Lykke til!

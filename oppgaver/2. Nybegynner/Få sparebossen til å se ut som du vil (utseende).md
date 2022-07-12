@@ -10,5 +10,6 @@ Nyttige begreper:
 fill = fargen du "fyller" et element med
 stroke = streken/omrisset rundt et element
 
-Ressurser:
+### Ressurser - Her kan du finne eksempler
+
 Navn på farger som kan brukes: https://www.w3schools.com/cssref/css_colors.asp

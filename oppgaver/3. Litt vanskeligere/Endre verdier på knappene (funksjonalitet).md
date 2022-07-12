@@ -14,6 +14,7 @@ addEventListener = brukes i javascript for å sjekke om brukeren gjør noe med e
 Du kan for eksempel si at "hvis noen klikker på akkurat denne knappen skal denne funksjonen kalles" på denne måten:
 knapp.addEventListener('click', navnetPåEnFunksjonSomSkalKalles);
 
-Ressurser:
+### Ressurser - Her kan du finne eksempler
+
 Les mer om innerHTML: https://www.w3schools.com/jsref/prop_html_innerhtml.asp
 Les mer om addEventListener: https://www.w3schools.com/jsref/met_element_addeventlistener.asp

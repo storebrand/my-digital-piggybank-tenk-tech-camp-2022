@@ -11,5 +11,6 @@ Hint:
 Nyttige begreper:
 <a> = "anchor" - HTML-tagen som brukes for å legge til en lenke.
 
-Ressurser:
+### Ressurser - Her kan du finne eksempler
+
 Lenker i HTML: https://www.w3schools.com/html/html_links.asp

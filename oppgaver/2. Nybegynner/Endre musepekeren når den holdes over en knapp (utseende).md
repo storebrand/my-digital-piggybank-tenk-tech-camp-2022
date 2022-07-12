@@ -11,6 +11,7 @@ Nyttige begreper:
 cursor = stikkordet du bruker for å bestemme hvordan musepekeren skal se ut i en css-fil.
 :hover = "sveve" - brukes i css for å si hva som skal skje når musepekeren "svever over" et HTML-element.
 
-Ressurser:
+### Ressurser - Her kan du finne eksempler
+
 Musepekere i CSS: https://www.w3schools.com/cssref/pr_class_cursor.asp
 Om hover i CSS: https://www.w3schools.com/csSref/sel_hover.asp

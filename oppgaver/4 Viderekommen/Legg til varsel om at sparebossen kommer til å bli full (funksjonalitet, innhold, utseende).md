@@ -47,6 +47,7 @@ Begynner med "const" eller "let", så navnet på variabelen, og så selve verdie
 For eksempel "const sparesum = 20;"  
  Type variabel ⬆ ⬆ navn ⬆ verdi
 
-Ressurser:
+### Ressurser - Her kan du finne eksempler
+
 Slik skriver du en funksjon: https://www.youtube.com/watch?v=19C7Xmsn18I
 If-setninger: https://www.w3schools.com/js/js_if_else.asp

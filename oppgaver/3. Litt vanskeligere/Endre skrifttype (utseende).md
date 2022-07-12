@@ -18,5 +18,6 @@ font-weight = stikkordet du bruker for å velge tykkelse på teksten i en css-fi
 font-size = stikkordet du bruker for å velge størrelse på teksten i en css-fil.
 color = stikkordet du bruker for å velge hva slags farge noe skal ha i en css-fil.
 
-Ressurser:
+### Ressurser - Her kan du finne eksempler
+
 Google fonts - mange forskjellige skrifttyper: https://fonts.google.com/?query=roboto

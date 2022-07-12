@@ -15,5 +15,6 @@ Nyttige begreper:
 variabel = Brukes i javascript. En "boks" som du kan lagre en verdi i - for eksempel et tall eller en tekst. Så kan du bruke variablen hver gang du vil bruke den verdien rundt omkring i koden.
 Begynner med "const" eller "let", så navnet på variabelen, og så selve verdien. For eksempel "const sum = 20;"
 
-Ressurser:
+### Ressurser - Her kan du finne eksempler
+
 Variabler i javascript: https://www.w3schools.com/js/js_variables.asp

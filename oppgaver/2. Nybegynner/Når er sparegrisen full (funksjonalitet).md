@@ -12,5 +12,6 @@ Nyttige begreper:
 const = en variabel; en slags "boks" der du kan lagre en verdi (for eksempel et tall) i javascript. Eksempel: const etNummer = 10;
 let = også en variabel. I en let-variabel kan du lagre en verdi du har tenkt å endre på senere. Eksempel: let sparesum = 0;
 
-Ressurser:
+### Ressurser - Her kan du finne eksempler
+
 Variabler i javascript: https://www.w3schools.com/js/js_variables.asp

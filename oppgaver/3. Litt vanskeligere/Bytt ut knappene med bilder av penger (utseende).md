@@ -15,5 +15,6 @@ Nyttige begreper:
 klasse = En css-regel som kan brukes hvis du vil at flere elementer på siden din skal se like ut.
 alt = "alternative text" - En tekst som beskriver hva bildet viser. Brukes for at folk som ikke kan se bildet kan forstå hva det viser.
 
-Ressurser:
+### Ressurser - Her kan du finne eksempler
+
 Bilder i HTML: https://www.w3schools.com/html/html_images.asp
