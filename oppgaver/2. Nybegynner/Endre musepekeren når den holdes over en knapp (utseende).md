@@ -4,7 +4,7 @@ Musepekeren er pila som vises når du beveger musa rundt på en side. Det er van
 Det gjør den imidlertid ikke på nettsiden din. Endre dette slik at musepekeren endrer seg når den beveges over knappene.
 
 Hint: 
-* Du må gjøre endringen i putt-på-penger-knapper.css-fila.
+* Du må gjøre endringen i [putt-på-penger-knapper.css-fila](?path=hvordan-skal-nettsiden-se-ut-%28css%29%2Fputt-pa-penger-knapper.css%3A1%3A0).
 
 Nyttige begreper: 
 cursor = stikkordet du bruker for å bestemme hvordan musepekeren skal se ut i en css-fil.

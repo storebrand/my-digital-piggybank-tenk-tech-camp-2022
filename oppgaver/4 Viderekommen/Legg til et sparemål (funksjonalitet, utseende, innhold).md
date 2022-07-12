@@ -1,4 +1,5 @@
 LEGG TIL ET SPAREMÅL. 
+
 (Denne oppgaven er ikke den letteste, så begynn med noen av de andre først om du ikke har kodet så mye før)
 
 * Legg til et felt der brukeren kan skrive inn hvor mye han/hun VIL spare. Du må også ha en knapp for å lagre sparemålet
