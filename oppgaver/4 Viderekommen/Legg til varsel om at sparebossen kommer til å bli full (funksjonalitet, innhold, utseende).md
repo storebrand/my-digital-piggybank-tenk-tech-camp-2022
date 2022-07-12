@@ -1,5 +1,4 @@
 VARSLE OM AT SPAREBØSSEN BLIR FULL HVIS DU LEGGER PÅ DETTE BELØPET
-
 (Dette er ikke blant de enkleste oppgavene, så det kan være lurt å begynne med en av de andre hvis du ikke har kodet så mye før. 
 Du må løse tøm-sparebøssen-oppgaven før du begynner på denne.)
 

@@ -7,7 +7,7 @@ Hint:
 * Du kan legge til bilder INNI <button></button>-elementet.
 * Et HTML-element kan ha flere css-klasser på en gang. Eksempel: <button class="klasse1 klasse2 klasse3">Klikk</button>
 * Du må legge til noen ekstra klasser til <button>-elementet for at "de gamle" knappene ikke skal vises lengre. 
-  Sjekk [putt-på-penger-knapper.css](?path=hvordan-skal-nettsiden-se-ut-%28css%29%2Fputt-pa-penger-knapper.css%3A12%3A67) - der har vi tjuvstarta med å lage noen slike klasser.
+  Sjekk "putt-på-penger-knapper.css" - der har vi tjuvstarta med å lage noen slike klasser.
 
 Nyttige begreper:
 <img>   = "image" - HTML-tagen som brukes når du vil sette inn et bilde.

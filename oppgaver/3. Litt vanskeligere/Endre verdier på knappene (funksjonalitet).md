@@ -4,7 +4,7 @@ Nå kan du legge 1kr, 5kr, 10kr eller 15kr på sparebøssen din. Men disse summe
 Endre på summene slik at de forskjellige knappene legger på det DU vil at de skal legge på.
 
 Hint:
-* Ta en titt på [putt-på-penger.js-fila](?path=hva-skal-skje-paa-nettsiden-%28javascript%29%2Fputt-pa-penger.js%3A1%3A0) og se om du forstår hvordan du skal endre summene der. 
+* Ta en titt på putt-på-penger.js-fila og se om du forstår hvordan du skal endre summene der. 
 * Se på sparesummen som legges til når du trykker på knappene for å dobbeltsjekke at riktig sum blir lagt til.
 
 Nyttige begreper:
