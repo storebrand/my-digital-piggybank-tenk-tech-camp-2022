@@ -1,5 +1,3 @@
 # my-digital-piggybank
 
-## Ressurser
-
-Slik skriver du en funksjon i javascript: https://www.youtube.com/watch?v=19C7Xmsn18I
+Velkommen! Sett i gang med den første oppgaven i oppgaveheftet, og spør oss hvis du lurer på noe!
