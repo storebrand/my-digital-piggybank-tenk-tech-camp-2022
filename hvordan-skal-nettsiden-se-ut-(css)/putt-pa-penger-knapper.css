@@ -24,13 +24,11 @@
 */
 
 #putt-paa-penger-knapper {
-  display: flex;
-  justify-content: space-between;
+
   width: 60%;
   max-width: 800px;
   height: auto;
   padding: 10px 20px;
-  flex-wrap: wrap;
 }
 
 
