@@ -16,12 +16,18 @@ const bildeAvPenger = document.getElementById('penger');
 const fullSparebosseVarsel = document.getElementById('full-sparebosse-varsel');
 const tomSparebossenKnapp = document.getElementById('tom-sparebossen-knapp');
 
+
+
+
 /*---------------------------------DEFINISJONER--------------------------------------------------------------------------------------------
 Her sier vi at sparesummen i utgangspunktet skal være 0 kroner.
 Vi bestemmer også hvor mye penger det er plass til i sparebøssen.
 -------------------------------------------------------------------------------------------------------------------------------------------*/
 let sparesum = 0;
 let fullSparebosse = 100;
+
+
+
 
 /*--------------------------------LEGG PÅ PENGER--------------------------------------------------------------------------------------------
 Her skriver vi funksjonene som legger penger til sparesummen.
@@ -49,7 +55,10 @@ function puttPaa20Kr() {
   tekstMedSparesum.innerHTML = `${sparesum} kroner`;
 }
 
-/*------------------------------KOBLE TIL KNAPPENE----------------------------------------------------------------------------------------
+
+
+
+/*------------------------------KOBLE TIL KNAPPENE (LYTTERE)----------------------------------------------------------------------------------------
 Her kobler vi putt-på-penger-funksjonene til knappene, slik at penger blir lagt til når du klikker på knappen.
 Det gjør vi ved å legge til en "lytter" som følger med på om noen klikker på knappene.
 Det vi egentlig sier er: "Hvis knapp1 blir klikket på skal du sette i gang puttPaa1Kr-funksjonen"
@@ -59,6 +68,9 @@ knapp1.addEventListener('click', puttPaa1Kr);
 knapp2.addEventListener('click', puttPaa5Kr);
 knapp3.addEventListener('click', puttPaa10Kr);
 knapp4.addEventListener('click', puttPaa20Kr);
+
+
+
 
 /*-------------------------------------------ER SPAREBOSSEN FULL?-----------------------------------------------------------------------
 Her er en funksjon som sjekker om sparebossen er full.
@@ -89,6 +101,9 @@ function erSparebossenFull() {
   }
 }
 
+
+
+
 /*-------------------------------------------------BLIR SPAREBØSSEN FULL?--------------------------------------------------------------
 Du kan også sjekke om sparebøssen BLIR full hvis du putter på et visst antall penger. 
 
@@ -118,6 +133,9 @@ function blirSparebossenFull(belopSomSkalPuttesPa) {
   }
 }
 
+
+
+
 /*---------------------------------------------VIS VARSEL OM AT SPAREBØSSEN ER FULL----------------------------------------------------
 Her en funksjon som gjør brukeren får beskjed om at sparegrisen er full når maksgrensen er nådd. 
 Hint: Denne funksjonen må kalles et annet sted i koden.  
@@ -126,6 +144,9 @@ Hint: Denne funksjonen må kalles et annet sted i koden.
 function visFullSparebosseVarsel() {
   fullSparebosseVarsel.style.display = 'block';
 }
+
+
+
 
 /*--------------------------------------------------TØM SPAREBØSSEN-------------------------------------------------------------------
 Her er en funksjon som tømmer sparebøssen.
@@ -140,8 +161,12 @@ function tomSparebossen() {
   fullSparebosseVarsel.style.display = 'none'; //Skjul boksen som sier at sparebøssen er full.
 }
 
-//Lag en lytter som kobler denne funksjonen til riktig knapp under:
-tomSparebossenKnapp.addEventListener("click", tomSparebossen);
+//Lag en lytter som kobler denne funksjonen til riktig knapp her:
+
+
+
+
+
 /*------------------------------------------------VIS PENGER SOM TYTER UT AV SPAREBØSSEN-------------------------------------------
 Her er en funksjon som setter inn et bilde av penger i pengesprekken til sparebøssen.
 Du må sette inn riktig bilde: bildeAvPengerSparegris, bildeAvPengerSparelama eller bildeAvPengerSparekatt
