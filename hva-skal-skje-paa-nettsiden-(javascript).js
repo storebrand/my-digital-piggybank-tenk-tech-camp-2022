@@ -53,6 +53,11 @@ function puttPaa10Kr() {
 function puttPaa20Kr() {
   sparesum = sparesum + 20;
   tekstMedSparesum.innerHTML = `${sparesum} kroner`;
+
+  if (erSparebossenFull()) {
+    visFullSparebosseVarsel();
+    visPenger();
+  }
 }
 
 
@@ -159,10 +164,11 @@ function tomSparebossen() {
   tekstMedSparesum.innerHTML = `${sparesum} kroner`; //Vis den nye, nullstilte sparesummen i stedet for den gamle
 
   fullSparebosseVarsel.style.display = 'none'; //Skjul boksen som sier at sparebøssen er full.
+
+  bildeAvPenger.innerHTML = "";
 }
 
 //Lag en lytter som kobler denne funksjonen til riktig knapp her:
-
 
 
 
