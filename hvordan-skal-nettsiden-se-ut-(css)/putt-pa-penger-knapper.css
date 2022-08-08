@@ -14,20 +14,27 @@
   Se på HTML-taggene i index.html - så ser du hvor de ulike klassene og id-ene er brukt.
 */
 
+
+
+
+/*--------------------------------------------------------------------------------
 /*Slik skal boksen som knappene bor i se ut.
 (La den stå slik med mindre du vet helt sikkert at du vil endre på den
+----------------------------------------------------------------------------------
 */
-#putt-på-penger-knapper {
-  display: flex;
-  justify-content: space-between;
+
+#putt-paa-penger-knapper {
+
   width: 60%;
   max-width: 800px;
   height: auto;
   padding: 10px 20px;
-  flex-wrap: wrap;
 }
 
-/*KNAPP UTEN BILDE*/
+
+
+
+/*--------------------------KNAPP UTEN BILDE------------------------------------------*/
 
 /*Slik vil du at knappen se ut når det ikke er lagt til noen bilder til den*/
 .legg-til-penger-knapp {
@@ -45,7 +52,10 @@
   background-color: lightgrey;
 }
 
-/*KNAPP MED BILDE*/
+
+
+
+/*---------------------------KNAPP MED BILDE---------------------------------------------*/
 
 /*Slik vil du at knappen skal se ut når du har lagt til et bilde. 
 (Det vi egentlig gjør er å fjerne all stylingen til selve knappen, slik at bare bildet vises*/
@@ -59,7 +69,10 @@
   background-color: #f9f9f8;
 }
 
-/*BILDENE*/
+
+
+
+/*-------------------------------BILDENE------------------------------------------------------*/
 
 /*Her bestemmer du høyden og bredden på bildet hvis det er en seddel*/
 .seddel img {

@@ -6,15 +6,18 @@ Se på id-en som står inni getElementById()-parentesen, og finn den samme id-en
 så skjønner du hvilket html-element det er snakk om.
 -------------------------------------------------------------------------------------------------------------------------------------------*/
 
-const knapp1 = document.getElementById('putt-på-penger-knapp-1');
-const knapp2 = document.getElementById('putt-på-penger-knapp-2');
-const knapp3 = document.getElementById('putt-på-penger-knapp-3');
-const knapp4 = document.getElementById('putt-på-penger-knapp-4');
+const knapp1 = document.getElementById('putt-paa-penger-knapp-1');
+const knapp2 = document.getElementById('putt-paa-penger-knapp-2');
+const knapp3 = document.getElementById('putt-paa-penger-knapp-3');
+const knapp4 = document.getElementById('putt-paa-penger-knapp-4');
 
 const tekstMedSparesum = document.getElementById('sparesum');
 const bildeAvPenger = document.getElementById('penger');
 const fullSparebosseVarsel = document.getElementById('full-sparebosse-varsel');
 const tomSparebossenKnapp = document.getElementById('tom-sparebossen-knapp');
+
+
+
 
 /*---------------------------------DEFINISJONER--------------------------------------------------------------------------------------------
 Her sier vi at sparesummen i utgangspunktet skal være 0 kroner.
@@ -23,42 +26,56 @@ Vi bestemmer også hvor mye penger det er plass til i sparebøssen.
 let sparesum = 0;
 let fullSparebosse = 100;
 
+
+
+
 /*--------------------------------LEGG PÅ PENGER--------------------------------------------------------------------------------------------
 Her skriver vi funksjonene som legger penger til sparesummen.
 Det eneste som skiller funksjonene er hvor mye penger som skal legges til, ellers gjør 
 de akkurat det samme. 
 -------------------------------------------------------------------------------------------------------------------------------------------*/
 
-function puttPå1Kr() {
+function puttPaa1Kr() {
   sparesum = sparesum + 1; // Vi sier at sparesum skal være den summen som er der fra før, pluss 1.
   tekstMedSparesum.innerHTML = `${sparesum} kroner`; //Så oppdaterer vi teksten i html-elementet som viser sparesum med den nye sparesummen.
 }
 
-function puttPå5Kr() {
+function puttPaa5Kr() {
   sparesum = sparesum + 5;
   tekstMedSparesum.innerHTML = `${sparesum} kroner`;
 }
 
-function puttPå10Kr() {
+function puttPaa10Kr() {
   sparesum = sparesum + 10;
   tekstMedSparesum.innerHTML = `${sparesum} kroner`;
 }
 
-function puttPå15Kr() {
-  sparesum = sparesum + 15;
+function puttPaa20Kr() {
+  sparesum = sparesum + 20;
   tekstMedSparesum.innerHTML = `${sparesum} kroner`;
+
+  if (erSparebossenFull()) {
+    visFullSparebosseVarsel();
+    visPenger();
+  }
 }
 
-/*------------------------------KOBLE TIL KNAPPENE----------------------------------------------------------------------------------------
+
+
+
+/*------------------------------KOBLE TIL KNAPPENE (LYTTERE)----------------------------------------------------------------------------------------
 Her kobler vi putt-på-penger-funksjonene til knappene, slik at penger blir lagt til når du klikker på knappen.
 Det gjør vi ved å legge til en "lytter" som følger med på om noen klikker på knappene.
-Det vi egentlig sier er: "Hvis knapp1 blir klikket på skal du sette i gang puttPå1Kr-funksjonen"
+Det vi egentlig sier er: "Hvis knapp1 blir klikket på skal du sette i gang puttPaa1Kr-funksjonen"
 -------------------------------------⬇---------------------------------------------------------------------------------------------------*/
 
-knapp1.addEventListener('click', puttPå1Kr);
-knapp2.addEventListener('click', puttPå5Kr);
-knapp3.addEventListener('click', puttPå10Kr);
-knapp4.addEventListener('click', puttPå15Kr);
+knapp1.addEventListener('click', puttPaa1Kr);
+knapp2.addEventListener('click', puttPaa5Kr);
+knapp3.addEventListener('click', puttPaa10Kr);
+knapp4.addEventListener('click', puttPaa20Kr);
+
+
+
 
 /*-------------------------------------------ER SPAREBOSSEN FULL?-----------------------------------------------------------------------
 Her er en funksjon som sjekker om sparebossen er full.
@@ -89,6 +106,9 @@ function erSparebossenFull() {
   }
 }
 
+
+
+
 /*-------------------------------------------------BLIR SPAREBØSSEN FULL?--------------------------------------------------------------
 Du kan også sjekke om sparebøssen BLIR full hvis du putter på et visst antall penger. 
 
@@ -106,17 +126,20 @@ function blirSparebossenFull(belopSomSkalPuttesPa) {
   const naavaerendeSparesum = tekstMedSparesum.innerHTML;
 
   //Finn ut hva summen vil bli etter at du har lagt til det ekstra beløpet.
-  const nySparesumNarDuPutterPåMerPenger =
+  const nySparesumNarDuPutterPaaMerPenger =
     parseInt(naavaerendeSparesum) + belopSomSkalPuttesPa;
   //⬆ parseInt() forvandler naavaerendeSparesum til et nummer i stedet for tekst, slik at du kan bruke det i et mattestykke
 
   //Hvis nySparesumNarDuPutterPaMerPenger er mer enn fullSparebossebeløpet returnerer funksjoen true. Hvis ikke returnerer den false.
-  if (nySparesumNarDuPutterPåMerPenger > fullSparebosse) {
+  if (nySparesumNarDuPutterPaaMerPenger > fullSparebosse) {
     return true;
   } else {
     return false;
   }
 }
+
+
+
 
 /*---------------------------------------------VIS VARSEL OM AT SPAREBØSSEN ER FULL----------------------------------------------------
 Her en funksjon som gjør brukeren får beskjed om at sparegrisen er full når maksgrensen er nådd. 
@@ -126,6 +149,9 @@ Hint: Denne funksjonen må kalles et annet sted i koden.
 function visFullSparebosseVarsel() {
   fullSparebosseVarsel.style.display = 'block';
 }
+
+
+
 
 /*--------------------------------------------------TØM SPAREBØSSEN-------------------------------------------------------------------
 Her er en funksjon som tømmer sparebøssen.
@@ -138,9 +164,14 @@ function tomSparebossen() {
   tekstMedSparesum.innerHTML = `${sparesum} kroner`; //Vis den nye, nullstilte sparesummen i stedet for den gamle
 
   fullSparebosseVarsel.style.display = 'none'; //Skjul boksen som sier at sparebøssen er full.
+
+  bildeAvPenger.innerHTML = "";
 }
 
-//Lag en lytter som kobler denne funksjonen til riktig knapp under:
+//Lag en lytter som kobler denne funksjonen til riktig knapp her:
+
+
+
 
 /*------------------------------------------------VIS PENGER SOM TYTER UT AV SPAREBØSSEN-------------------------------------------
 Her er en funksjon som setter inn et bilde av penger i pengesprekken til sparebøssen.
