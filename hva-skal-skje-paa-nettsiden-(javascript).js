@@ -44,13 +44,9 @@ function puttPaa10Kr() {
   tekstMedSparesum.innerHTML = `${sparesum} kroner`;
 }
 
-function puttPaa15Kr() {
-  sparesum = sparesum + 15;
+function puttPaa20Kr() {
+  sparesum = sparesum + 20;
   tekstMedSparesum.innerHTML = `${sparesum} kroner`;
-
-  if (erSparebossenFull()) {
-    visFullSparebosseVarsel();
-  }
 }
 
 /*------------------------------KOBLE TIL KNAPPENE----------------------------------------------------------------------------------------
@@ -62,7 +58,7 @@ Det vi egentlig sier er: "Hvis knapp1 blir klikket på skal du sette i gang putt
 knapp1.addEventListener('click', puttPaa1Kr);
 knapp2.addEventListener('click', puttPaa5Kr);
 knapp3.addEventListener('click', puttPaa10Kr);
-knapp4.addEventListener('click', puttPaa15Kr);
+knapp4.addEventListener('click', puttPaa20Kr);
 
 /*-------------------------------------------ER SPAREBOSSEN FULL?-----------------------------------------------------------------------
 Her er en funksjon som sjekker om sparebossen er full.
