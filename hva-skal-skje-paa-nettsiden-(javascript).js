@@ -53,11 +53,6 @@ function puttPaa10Kr() {
 function puttPaa20Kr() {
   sparesum = sparesum + 20;
   tekstMedSparesum.innerHTML = `${sparesum} kroner`;
-
-  if (erSparebossenFull()) {
-    visFullSparebosseVarsel();
-    visPenger();
-  }
 }
 
 
@@ -99,7 +94,7 @@ function erSparebossenFull() {
 
   //Sjekk om sparesummen er større enn fullSparebosse-summen. (Tegnet i midten er en sånn krokodillegap man lærer om i matte).
   //Hvis sparesummen er større, skal funksjonen returnere "true". Hvis ikke skal den returnere "false"
-  if (sparesum > fullSparebosse) {
+  if (sparesum >= fullSparebosse) {
     return true;
   } else {
     return false;
@@ -165,11 +160,13 @@ function tomSparebossen() {
 
   fullSparebosseVarsel.style.display = 'none'; //Skjul boksen som sier at sparebøssen er full.
 
-  bildeAvPenger.innerHTML = "";
+  bildeAvPenger.innerHTML = ""; //Fjern pengene som tyter ut av pengesprekken
+
+  visKnappene(); //Vis putt-på-penger-knappene igjen
+
 }
 
 //Lag en lytter som kobler denne funksjonen til riktig knapp her:
-
 
 
 
@@ -250,3 +247,24 @@ const bildeAvPengerSparelama = `
   </g>
 </g>
 `;
+
+
+/*------------------------------------------------VIS OG SKJUL PUTT-PÅ-PENGER-KNAPPENE-------------------------------------------
+Når sparebøssen er full, vil du ikke at det skal gå an å putte på mer penger. Da kan du skjule knappene ved å kalle skjulKnappene()-funksjonen.
+Men når sparebøssen er tømt, vil du jo vise knappene igjen. Da kan du kalle visKnappene(). 
+-----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+function skjulKnappene() {
+  knapp1.style.display = "none"; //Endre på stylingen til hver enkelt knapp, slik at den ikke vises. 
+  knapp2.style.display = "none";
+  knapp3.style.display = "none";
+  knapp4.style.display = "none";
+};
+
+function visKnappene() {
+  knapp1.style.display = "inline-block"; //Endre på stylingen til hver enkelt knapp, slik at den vises igjen.
+  knapp2.style.display = "inline-block";
+  knapp3.style.display = "inline-block";
+  knapp4.style.display = "inline-block";
+}
